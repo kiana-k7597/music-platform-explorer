@@ -1,4 +1,4 @@
-package com.example.spotifyexplorer.models;
+package com.spotifyexplorer.models;
 
 import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
