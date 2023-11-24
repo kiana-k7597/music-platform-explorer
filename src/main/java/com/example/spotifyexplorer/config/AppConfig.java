@@ -1,4 +1,4 @@
-package com.example.spotifyexplorer.Config;
+package com.example.spotifyexplorer.config;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

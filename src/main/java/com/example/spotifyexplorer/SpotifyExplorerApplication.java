@@ -1,6 +1,6 @@
 package com.example.spotifyexplorer;
 
-import com.example.spotifyexplorer.Service.NewAlbumService;
+import com.example.spotifyexplorer.service.NewAlbumService;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -16,8 +16,9 @@ public class SpotifyExplorerApplication {
     @Bean
     CommandLineRunner run(NewAlbumService newAlbumsService) {
         return args -> {
-            String response = newAlbumsService.getNewAlbumRecommendations();
-            System.out.println("Here are some new albums recommended for you: " + response);
+            String output = newAlbumsService.getStringOutput();
+
+            System.out.println(output);
         };
     }
 }
