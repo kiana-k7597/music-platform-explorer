@@ -8,10 +8,14 @@ import org.springframework.web.client.RestTemplate;
 @Component
 public class SpotifyAPIClient {
 
-    private final RestTemplate restTemplate = new RestTemplate();
-
     @Value("${spotify.bearer-token}")
     private String bearerToken;
+
+    private final RestTemplate restTemplate;
+
+    public SpotifyAPIClient(RestTemplate restTemplate) {
+        this.restTemplate = restTemplate;
+    }
 
     public String getNewAlbumRecommendations() {
         HttpHeaders headers = new HttpHeaders();

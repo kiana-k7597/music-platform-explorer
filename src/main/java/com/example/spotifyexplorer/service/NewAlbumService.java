@@ -10,9 +10,16 @@ import java.util.List;
 @Service
 public class NewAlbumService {
 
+    private final SpotifyAPIClient spotifyAPIClient;
+
+    public NewAlbumService(SpotifyAPIClient spotifyAPIClient) {
+        this.spotifyAPIClient = spotifyAPIClient;
+    }
+
+
     public String getStringOutput() throws Exception {
 
-        String response = new SpotifyAPIClient().getNewAlbumRecommendations();
+        String response = spotifyAPIClient.getNewAlbumRecommendations();
 
         List<Album> albumAndArtists = new AlbumJsonTransformer().parseAlbums(response);
 
