@@ -1,4 +1,4 @@
-package com.example.spotifyexplorer.models;
+package com.spotifyexplorer.models;
 
 public class AlbumResponse {
     private AlbumData albums;

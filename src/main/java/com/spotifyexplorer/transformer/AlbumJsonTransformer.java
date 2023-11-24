@@ -1,7 +1,7 @@
-package com.example.spotifyexplorer.transformer;
+package com.spotifyexplorer.transformer;
 
-import com.example.spotifyexplorer.models.Album;
-import com.example.spotifyexplorer.models.AlbumResponse;
+import com.spotifyexplorer.models.Album;
+import com.spotifyexplorer.models.AlbumResponse;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
 import java.util.List;

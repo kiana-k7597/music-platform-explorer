@@ -1,4 +1,4 @@
-package com.example.spotifyexplorer.client;
+package com.spotifyexplorer.client;
 
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.http.*;

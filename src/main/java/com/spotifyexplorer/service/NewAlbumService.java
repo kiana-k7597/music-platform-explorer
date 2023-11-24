@@ -1,8 +1,8 @@
-package com.example.spotifyexplorer.service;
+package com.spotifyexplorer.service;
 
-import com.example.spotifyexplorer.client.SpotifyAPIClient;
-import com.example.spotifyexplorer.models.Album;
-import com.example.spotifyexplorer.transformer.AlbumJsonTransformer;
+import com.spotifyexplorer.client.SpotifyAPIClient;
+import com.spotifyexplorer.models.Album;
+import com.spotifyexplorer.transformer.AlbumJsonTransformer;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
